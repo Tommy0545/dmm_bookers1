@@ -9,7 +9,7 @@
 <% end %>
 
 <%= form_with model:@book,local:true do|f| %>
-<form class="edit_book">
+
     <div class="field">
         <label for="book_title">Title</label>
         <%= f.text_field:title %>
@@ -22,7 +22,7 @@
     <div class="actions">
         <div class="input"><%= f.submit 'Update Book' %></div>
     </div>
-</form>
+
 <% end %>
 
 <%= link_to "Show",book_path %>
